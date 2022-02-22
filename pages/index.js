@@ -18,7 +18,9 @@ export default function Home() {
       <header className={`${style.header}`}>
         <div className={`${style.hd_title_area}`}>
           <div className={`${style.hd_title}`}>
-            <a className={`${style.hd_title_link}`}>おきなわ工芸の杜（ロゴ）</a>
+            <a className={`${style.hd_title_link}`}>
+            <Image src="/logo1.svg" width={353.71} height={82.53} />
+            </a>
           </div>
           <span>|</span>
           <p>本日開館中</p>
@@ -67,7 +69,9 @@ export default function Home() {
             </span>
             <h1 className={`${style.mainVisual_title}`}>やちむんの里展示会</h1>
           </div>
-          <div>（メイン画像）</div>
+          <div className={`${style.nextImg}`}>
+            <Image src="/main-visual.jpeg" width={796.36} height={542.63} objectFit={"cover"} />
+          </div>
 
           {/* 説明h2 */}
           <h2 className={`${style.mainVisual_explanation}`}>
@@ -156,63 +160,81 @@ export default function Home() {
           </div>
           {/* ギャラリーアイテム */}
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
             </p>
           </div>
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
             </p>
           </div>
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
             </p>
           </div>
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
             </p>
           </div>
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
             </p>
           </div>
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
             </p>
           </div>
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
             </p>
           </div>
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
             </p>
           </div>
           <div className={`${style.gallery_item}`}>
-            <div className={`${style.gallery_img}`}></div>
+            <div className={`${style.gallery_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+            </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
               工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。50文字〜80文字程度工芸品の紹介文がはいります。
@@ -223,7 +245,9 @@ export default function Home() {
         {/* その他リンク */}
         <section className={`${style.others}`}>
           <div className={`${style.others_item}`}>
-            <div className={`${style.others_img}`}>（画像の挿入）</div>
+            <div className={`${style.others_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={358.36} height={144.93} objectFit={"cover"} />
+            </div>
             {/* relative */}
             <span className={`${style.others＿button}`}>
               （ボタンの挿入）
@@ -235,7 +259,9 @@ export default function Home() {
             {/* absolute */}
           </div>
           <div className={`${style.others_item}`}>
-            <div className={`${style.others_img}`}>（画像の挿入）</div>
+            <div className={`${style.others_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={358.36} height={144.93} objectFit={"cover"} />
+            </div>
             {/* relative */}
             <span className={`${style.others＿button}`}>
               （ボタンの挿入）
@@ -247,7 +273,9 @@ export default function Home() {
             {/* absolute */}
           </div>
           <div className={`${style.others_item}`}>
-            <div className={`${style.others_img}`}>（画像の挿入）</div>
+            <div className={`${style.others_img} ${style.nextImg}`}>
+            <Image src="/item.jpeg" width={358.36} height={144.93} objectFit={"cover"} />
+            </div>
             {/* relative */}
             <span className={`${style.others＿button}`}>
               （ボタンの挿入）
@@ -262,7 +290,9 @@ export default function Home() {
 
         {/* おきなわ工芸の杜について */}
         <section className={`${style.about}`}>
-          <div className={`${style.about_img}`}>（画像の挿入）</div>{" "}
+          <div className={`${style.about_img} ${style.nextImg}`}>
+          <Image src="/about.jpeg" width={1700} height={572.28}/>
+          </div>
           {/* relative */}
           <div className={`${style.about_box}`}>
             {" "}
@@ -329,7 +359,9 @@ export default function Home() {
           </nav>
 
           <div className={`${style.ft_logo}`}>
-            <div className={`${style.ft_logo_img}`}>（画像の挿入）</div>
+            <div className={`${style.ft_logo_img}`}>
+            <Image src="/logo1.svg" width={416.22} height={106.11} />
+            </div>
             <button>フロアマップ</button>
             <button>お問い合わせ</button>
           </div>
