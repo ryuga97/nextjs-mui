@@ -40,7 +40,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, sans-serif;
+  /* font-family: Hiragino Kaku Gothic Std; */
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

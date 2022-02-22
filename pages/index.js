@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import style from "../styles/Home.module.css";
 import Button from "@mui/material/Button";
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
 export default function Home() {
   return (
@@ -9,7 +10,6 @@ export default function Home() {
       <Head>
         <title>タイトルタイトル</title>
         <meta name="description" content="説明説明説明" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       {/* ヘッダー
@@ -22,9 +22,9 @@ export default function Home() {
             <Image src="/logo1.svg" width={353.71} height={82.53} />
             </a>
           </div>
-          <span>|</span>
-          <p>本日開館中</p>
-          <p>Language ▼</p>
+          <span className={`${style.hd_line}`}></span>
+          <AccountBalanceIcon/><p>本日開館中</p>
+          <p className={`${style.hd_language}`}>Language </p>
         </div>
         <nav className={`${style.hd_nav}`}>
           <ul className={`${style.hd_list}`}>

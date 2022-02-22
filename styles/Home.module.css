@@ -14,7 +14,42 @@
 /* ヘッダー
 --------------------------------- */
 .header{
+  position: relative;
+  width: 1292px;
+  height: 243.89px;
+  margin: 20.64px 69px 0 79px;
+}
 
+.hd_title_area{
+  display: flex;
+}
+
+.hd_title{
+  margin-top: 29.13px;
+}
+
+.hd_line{
+  width: 0px;
+  height: 35.03px;
+  border: 1px solid #4b4b4b;
+  margin: 52.88px 51.05px 0 68.62px;
+}
+
+
+
+.hd_language{
+  position: absolute;
+  top: 0;
+  left: 93.31%;
+
+}
+
+.hd_nav{
+
+}
+
+.hd_list{
+  display: flex;
 }
 
 /* メイン
