@@ -146,41 +146,44 @@ export default function Home() {
 
           {/* 詳細情報 */}
           <div className={`${style.mainVisual_info_box}`}>
-            {/* 箱 */}
-            <div className={`${style.mainVisual_info_wrapp}`}>
-              {/* flex */}
-              <ul
-                className={`${style.mainVisual_info}${style.mainVisual_info_fw}`}
-              >
-                <li className={`${style.mainVisual_info_item}`}>会期</li>
-                <li className={`${style.mainVisual_info_item}`}>場所</li>
-                <li className={`${style.mainVisual_info_item}`}>料金</li>
-                <li className={`${style.mainVisual_info_item}`}>主催</li>
-                <li className={`${style.mainVisual_info_item}`}>協力</li>
-                <li className={`${style.mainVisual_info_item}`}>後援</li>
-                <li className={`${style.mainVisual_info_item}`}>備考</li>
-              </ul>
-              <span>（縦棒0＊507．53）</span>
-              <ul className={`${style.mainVisual_info}`}>
-                <li className={`${style.mainVisual_info_item}`}>
-                  2021年6月1日〜6月20日
-                </li>
-                <li className={`${style.mainVisual_info_item}`}>展示室A</li>
-                <li className={`${style.mainVisual_info_item}`}>無料</li>
-                <li className={`${style.mainVisual_info_item}`}>
-                  主催情報主催情報主催情報主催情報主催情報主催情報
-                </li>
-                <li className={`${style.mainVisual_info_item}`}>
-                  協力情報協力情報協力情報協力情報協力情報協力情報協力情報協力情報
-                </li>
-                <li className={`${style.mainVisual_info_item}`}>
-                  後援情報後援情報後援情報後援情報後援情報後援情報後援情報
-                </li>
-                <li className={`${style.mainVisual_info_item}`}>
-                  備考情報がはいります備考情報がはいります備考情報がはいります備考情報がはいります
-                </li>
-              </ul>
-            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <th>会期</th>
+                  <td>2021年6月1日〜6月20日</td>
+                </tr>
+                <tr>
+                  <th>場所</th>
+                  <td>展示室A</td>
+                </tr>
+                <tr>
+                  <th>料金</th>
+                  <td>無料</td>
+                </tr>
+                <tr>
+                  <th>主催</th>
+                  <td>主催情報主催情報主催情報主催情報主催情報主催情報</td>
+                </tr>
+                <tr>
+                  <th>協力</th>
+                  <td>
+                    協力情報協力情報協力情報協力情報協力情報協力情報協力情報協力情報
+                  </td>
+                </tr>
+                <tr>
+                  <th>後援</th>
+                  <td>
+                    後援情報後援情報後援情報後援情報後援情報後援情報後援情報
+                  </td>
+                </tr>
+                <tr>
+                  <th>備考</th>
+                  <td>
+                    備考情報がはいります備考情報がはいります備考情報がはいります備考情報がはいります
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
 

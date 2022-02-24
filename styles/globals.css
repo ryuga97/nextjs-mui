@@ -78,6 +78,11 @@ select {
   font: inherit;
 }
 
+html{
+  background: #E5E5E5;
+
+}
+
 a {
   color: inherit;
   text-decoration: none;

@@ -11,6 +11,9 @@
   width: 90%;
 }
 
+.home_all {
+}
+
 /* ヘッダー
 --------------------------------- */
 .header {
@@ -141,6 +144,8 @@
   border-radius: 20px;
 }
 
+/* 説明・内容 */
+
 .mainVisual_explanation_wrapp {
   text-align: center;
   margin-top: 132.09px;
@@ -156,10 +161,9 @@
   letter-spacing: 0.2em;
 }
 
-.mainVisual_read_wrapp{
+.mainVisual_read_wrapp {
   text-align: center;
   margin-top: 67.78px;
-
 }
 
 .mainVisual_read {
@@ -172,8 +176,47 @@
   text-align: start;
 }
 
-.mainVisual_read_item{
+.mainVisual_read_item {
   margin-top: 46px;
+}
+
+/* 詳細情報 */
+
+.mainVisual_info_box {
+  position: relative;
+  width: 1013.87px;
+  height: 620.06px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.mainVisual_info_box table{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68%;
+}
+
+.mainVisual_info_box tbody{
+
+}
+
+.mainVisual_info_box tr{
+ 
+}
+
+.mainVisual_info_box th{
+ width: 18%;
+ padding-right: 52.66px;
+ padding-bottom: 34.26px;
+}
+
+.mainVisual_info_box td{
+  border-left: 1.5px solid rgba(0, 0, 0, 0.05);
+  padding-left: 42.66px;
+  padding-bottom: 34.26px;
 }
 
 /* フッター
