@@ -2,7 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import style from "../styles/Home.module.css";
 import Button from "@mui/material/Button";
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import AccountBalanceOutlinedIcon from "@mui/icons-material/AccountBalanceOutlined";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Home() {
   return (
@@ -18,36 +21,59 @@ export default function Home() {
       <header className={`${style.header}`}>
         <div className={`${style.hd_title_area}`}>
           <div className={`${style.hd_title}`}>
-            <a className={`${style.hd_title_link}`}>
-            <Image src="/logo1.svg" width={353.71} height={82.53} />
+            <a className={`${style.hd_title_link} ${style.nextImg}`}>
+              <Image src="/logo1.svg" width={353.71} height={82.53} />
             </a>
           </div>
           <span className={`${style.hd_line}`}></span>
-          <AccountBalanceIcon/><p>本日開館中</p>
-          <p className={`${style.hd_language}`}>Language </p>
+          <div className={`${style.hd_today}`}>
+            <AccountBalanceOutlinedIcon style={{ marginRight: "17.45" }} />
+            <p className={`${style.hd_today_txt}`}>本日開館中</p>
+          </div>
+
+          <div className={`${style.hd_language}`}>
+            <p>Language</p>
+            <ArrowDropDownIcon />
+          </div>
         </div>
         <nav className={`${style.hd_nav}`}>
           <ul className={`${style.hd_list}`}>
             <li className={`${style.hd_list_item}`}>体験プログラム</li>
             <li className={`${style.hd_list_item}`}>企画展・イベント</li>
             <li className={`${style.hd_list_item}`}>入居者紹介</li>
-            <li className={`${style.hd_list_item}`}>ご利用案内</li>
+            <li className={`${style.hd_list_item}`}>
+              ご利用案内
+              <KeyboardArrowDownIcon
+                style={{
+                  verticalAlign: "top",
+                  fontSize: "medium",
+                  margin: "4px 0 0 8px",
+                }}
+              />
+            </li>
             <li className={`${style.hd_list_item}`}>
               おきなわ工芸の杜について
+              <KeyboardArrowDownIcon
+                style={{
+                  verticalAlign: "top",
+                  fontSize: "medium",
+                  margin: "4px 0 0 8px",
+                }}
+              />
             </li>
             <li className={`${style.hd_list_item}`}>お知らせ</li>
             <li className={`${style.hd_list_item}`}>
-              （ハンバーガーメニュー）
+              <MenuIcon style={{ verticalAlign: "top" }} />
             </li>
           </ul>
         </nav>
         <nav className={`${style.hd_breadcrumb}`}>
           <ul className={`${style.breadcrumb}`}>
             <li>
-              <a href="#">ホーム</a>
+              <a href="#">ホーム /</a>
             </li>
             <li>
-              <a href="#">パンくず</a>
+              <a href="#">パンくず /</a>
             </li>
             <li>
               <a href="#">パンくず</a>
@@ -64,13 +90,18 @@ export default function Home() {
         <section className={`${style.mainVisual}`}>
           <div className={`${style.mainVisual_title_wrapp}`}>
             <span className={`${style.mainVisual_title_sub01}`}>開催中</span>
-            <span className={`${style.mainVisual_title_sub02}`}>
+            <h3 className={`${style.mainVisual_title_sub02}`}>
               企画展・イベント
-            </span>
+            </h3>
             <h1 className={`${style.mainVisual_title}`}>やちむんの里展示会</h1>
           </div>
           <div className={`${style.nextImg}`}>
-            <Image src="/main-visual.jpeg" width={796.36} height={542.63} objectFit={"cover"} />
+            <Image
+              src="/main-visual.jpeg"
+              width={796.36}
+              height={542.63}
+              objectFit={"cover"}
+            />
           </div>
 
           {/* 説明h2 */}
@@ -161,7 +192,12 @@ export default function Home() {
           {/* ギャラリーアイテム */}
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -170,7 +206,12 @@ export default function Home() {
           </div>
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -179,7 +220,12 @@ export default function Home() {
           </div>
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -188,7 +234,12 @@ export default function Home() {
           </div>
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -197,7 +248,12 @@ export default function Home() {
           </div>
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -206,7 +262,12 @@ export default function Home() {
           </div>
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -215,7 +276,12 @@ export default function Home() {
           </div>
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -224,7 +290,12 @@ export default function Home() {
           </div>
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -233,7 +304,12 @@ export default function Home() {
           </div>
           <div className={`${style.gallery_item}`}>
             <div className={`${style.gallery_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={408.32} height={288.33} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={408.32}
+                height={288.33}
+                objectFit={"cover"}
+              />
             </div>
             <span className={`${style.gallery_item_title}`}>工芸品</span>
             <p className={`${style.gallery_item_read}`}>
@@ -246,7 +322,12 @@ export default function Home() {
         <section className={`${style.others}`}>
           <div className={`${style.others_item}`}>
             <div className={`${style.others_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={358.36} height={144.93} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={358.36}
+                height={144.93}
+                objectFit={"cover"}
+              />
             </div>
             {/* relative */}
             <span className={`${style.others＿button}`}>
@@ -260,7 +341,12 @@ export default function Home() {
           </div>
           <div className={`${style.others_item}`}>
             <div className={`${style.others_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={358.36} height={144.93} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={358.36}
+                height={144.93}
+                objectFit={"cover"}
+              />
             </div>
             {/* relative */}
             <span className={`${style.others＿button}`}>
@@ -274,7 +360,12 @@ export default function Home() {
           </div>
           <div className={`${style.others_item}`}>
             <div className={`${style.others_img} ${style.nextImg}`}>
-            <Image src="/item.jpeg" width={358.36} height={144.93} objectFit={"cover"} />
+              <Image
+                src="/item.jpeg"
+                width={358.36}
+                height={144.93}
+                objectFit={"cover"}
+              />
             </div>
             {/* relative */}
             <span className={`${style.others＿button}`}>
@@ -291,7 +382,7 @@ export default function Home() {
         {/* おきなわ工芸の杜について */}
         <section className={`${style.about}`}>
           <div className={`${style.about_img} ${style.nextImg}`}>
-          <Image src="/about.jpeg" width={1700} height={572.28}/>
+            <Image src="/about.jpeg" width={1700} height={572.28} />
           </div>
           {/* relative */}
           <div className={`${style.about_box}`}>
@@ -360,7 +451,7 @@ export default function Home() {
 
           <div className={`${style.ft_logo}`}>
             <div className={`${style.ft_logo_img}`}>
-            <Image src="/logo1.svg" width={416.22} height={106.11} />
+              <Image src="/logo1.svg" width={416.22} height={106.11} />
             </div>
             <button>フロアマップ</button>
             <button>お問い合わせ</button>

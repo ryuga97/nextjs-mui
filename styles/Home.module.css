@@ -35,21 +35,55 @@
   margin: 52.88px 51.05px 0 68.62px;
 }
 
+.hd_today{
+  display: flex;
+  margin-top: 61.65px;
+}
 
+.hd_today_txt{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24.5px;
+  letter-spacing: 2px;
+}
 
 .hd_language{
+  display: flex;
   position: absolute;
   top: 0;
-  left: 93.31%;
+  right: 0;
+  letter-spacing: 1px;
+  color: #4B4B4B;
 
 }
 
 .hd_nav{
-
+  margin-top: 52.22px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22.5px;
+  letter-spacing: 1px;
 }
 
 .hd_list{
   display: flex;
+}
+
+.hd_list_item{
+  margin-right: 73px;
+}
+
+.breadcrumb{
+  display: flex;
+  position: absolute;
+  left: 4.83px;
+  bottom: 2px;
+  color: #2C2C2C;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: 1px;
 }
 
 /* メイン
