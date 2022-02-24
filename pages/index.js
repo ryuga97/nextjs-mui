@@ -89,13 +89,14 @@ export default function Home() {
         {/* メインビジュアル */}
         <section className={`${style.mainVisual}`}>
           <div className={`${style.mainVisual_title_wrapp}`}>
-            <span className={`${style.mainVisual_title_sub01}`}>開催中</span>
-            <h3 className={`${style.mainVisual_title_sub02}`}>
+            <span className={`${style.mainVisual_title_subTxt01}`}>開催中</span>
+
+            <span className={`${style.mainVisual_title_subTxt02}`}>
               企画展・イベント
-            </h3>
+            </span>
             <h1 className={`${style.mainVisual_title}`}>やちむんの里展示会</h1>
           </div>
-          <div className={`${style.nextImg}`}>
+          <div className={`${style.mainVisual_img} ${style.nextImg}`}>
             <Image
               src="/main-visual.jpeg"
               width={796.36}
@@ -105,46 +106,48 @@ export default function Home() {
           </div>
 
           {/* 説明h2 */}
-          <h2 className={`${style.mainVisual_explanation}`}>
-            短い紹介文（50〜80文字程度）短い紹介文（50〜80文字程度）短い紹介文（50〜80文字程度）短い紹介文（50〜80文字程度）
-          </h2>
+          <div className={`${style.mainVisual_explanation_wrapp}`}>
+            <h2 className={`${style.mainVisual_explanation}`}>
+              短い紹介文（50〜80文字程度）短い紹介文（50〜80文字程度）短い紹介文（50〜80文字程度）短い紹介文（50〜80文字程度）
+            </h2>
+          </div>
 
           {/* 内容 */}
-          <div className={`${style.mainVisual_read}`}>
-            <p>
-              詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)
-            </p>
+          <div className={`${style.mainVisual_read_wrapp}`}>
+            <div className={`${style.mainVisual_read}`}>
+              <p>
+                詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)
+              </p>
 
-            <p>
-              詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文
-            </p>
+              <p className={`${style.mainVisual_read_item}`}>
+                詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文
+              </p>
 
-            <p>
-              (600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
-              文字程度もしくは引用できるウェブサイトURLなど)
-            </p>
+              <p className={`${style.mainVisual_read_item}`}>
+                (600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)詳細な紹介文(600〜1000
+                文字程度もしくは引用できるウェブサイトURLなど)
+              </p>
+            </div>
           </div>
 
           {/* 詳細情報 */}
           <div className={`${style.mainVisual_info_box}`}>
-            {" "}
             {/* 箱 */}
             <div className={`${style.mainVisual_info_wrapp}`}>
-              {" "}
               {/* flex */}
               <ul
                 className={`${style.mainVisual_info}${style.mainVisual_info_fw}`}
