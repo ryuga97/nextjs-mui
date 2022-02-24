@@ -13,6 +13,12 @@ export default function Home() {
       <Head>
         <title>タイトルタイトル</title>
         <meta name="description" content="説明説明説明" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       {/* ヘッダー
@@ -187,12 +193,11 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 主な展示品 */}
+        {/* ギャラリー */}
         <section className={`${style.gallery}`}>
           <h2 className={`${style.gallery_title}`}>主な展示品</h2>
           <div className={`${style.gallery_sub_box}`}>
             <span className={`${style.gallery_sub_round}`}>
-              （まる::befor）
             </span>
           </div>
           {/* ギャラリーアイテム */}

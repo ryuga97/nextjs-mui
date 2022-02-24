@@ -186,38 +186,85 @@
   position: relative;
   width: 1013.87px;
   height: 620.06px;
-  margin: 0 auto;
+  margin-top: 36.45px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   border-radius: 20px;
 }
 
-.mainVisual_info_box table{
+.mainVisual_info_box table {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 68%;
+  color: #2c2c2c;
+  border-collapse: collapse;
 }
 
-.mainVisual_info_box tbody{
-
+.mainVisual_info_box th {
+  width: 18%;
+  padding-right: 52.66px;
+  padding-bottom: 34.26px;
+  font-size: 16px;
+  text-align: right;
+  letter-spacing: 0.05em;
 }
 
-.mainVisual_info_box tr{
- 
-}
-
-.mainVisual_info_box th{
- width: 18%;
- padding-right: 52.66px;
- padding-bottom: 34.26px;
-}
-
-.mainVisual_info_box td{
+.mainVisual_info_box td {
   border-left: 1.5px solid rgba(0, 0, 0, 0.05);
   padding-left: 42.66px;
   padding-bottom: 34.26px;
+  font-family: Hiragino Kaku Gothic Pro;
 }
+
+/* ギャラリー */
+.gallery{
+ position: relative;
+}
+
+.gallery_title{
+  width: 150px;
+height: 60px;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-size: 30px;
+line-height: 60px;
+margin-top: 109.95px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.gallery_sub_box{
+  position: relative;
+ margin: 0 auto;
+ height: 81.05px;
+}
+
+.gallery_sub_round{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  width: 33.25px;
+height: 33.25px;
+  border: 1px solid #26213F;
+  border-radius: 50%;
+}
+
+.gallery_sub_round::before{
+  content: "";
+  position: absolute;
+  height: 48.67px;
+  border: 0.5px solid #26213F;
+  top: -33px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
 
 /* フッター
 --------------------------------- */
