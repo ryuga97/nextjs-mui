@@ -18,7 +18,6 @@
 --------------------------------- */
 .header {
   position: relative;
-  width: 1292px;
   height: 243.89px;
   margin: 20.64px 69px 0 79px;
   color: #2c2c2c;
@@ -220,28 +219,28 @@
 }
 
 /* ギャラリー */
-.gallery{
- position: relative;
-}
-
-.gallery_title{
-  width: 150px;
-height: 60px;
-font-family: 'M PLUS Rounded 1c', sans-serif;
-font-size: 30px;
-line-height: 60px;
-margin-top: 109.95px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.gallery_sub_box{
+.gallery {
   position: relative;
- margin: 0 auto;
- height: 81.05px;
 }
 
-.gallery_sub_round{
+.gallery_title {
+  width: 150px;
+  height: 60px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  margin-top: 109.95px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery_sub_box {
+  position: relative;
+  margin: 0 auto;
+  height: 81.05px;
+}
+
+.gallery_sub_round {
   content: "";
   position: absolute;
   z-index: 1;
@@ -249,22 +248,213 @@ margin-right: auto;
   bottom: 0;
   transform: translate(-50%);
   width: 33.25px;
-height: 33.25px;
-  border: 1px solid #26213F;
+  height: 33.25px;
+  border: 1px solid #26213f;
   border-radius: 50%;
 }
 
-.gallery_sub_round::before{
+.gallery_sub_round::before {
   content: "";
   position: absolute;
   height: 48.67px;
-  border: 0.5px solid #26213F;
+  border: 0.5px solid #26213f;
   top: -33px;
   left: 50%;
   transform: translate(-50%);
 }
 
+/* ギャラリーアイテム */
 
+.gallery_item_all {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 99.58px;
+}
+
+.gallery_item {
+  width: 33.3333%;
+}
+
+.gallery_img {
+  text-align: center;
+}
+
+.gallery_img img {
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.gallery_item_txt {
+  color: #4b4b4b;
+  width: 333.16px;
+  margin: 27.67px auto 99.58px;
+}
+
+.gallery_item_title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  width: 60px;
+  height: 30px;
+}
+
+.gallery_item_read {
+  font-family: Hiragino Kaku Gothic Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 220%;
+  letter-spacing: 0.1em;
+  margin-top: 30.12px;
+}
+
+/* その他リンク */
+
+.others {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 100.43px;
+}
+
+.others_item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  margin-top: 66.69px;
+  margin-right: 12.46px;
+  margin-bottom: 32.76px;
+}
+
+.others_img {
+}
+
+.others_img img {
+  border-radius: 10px;
+}
+
+.others_button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  color: #454545;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 8.65px 0 8.65px 28.79px;
+  top: 50%;
+  left: 17%;
+  transform: translate(0, -50%);
+}
+
+.others_button span {
+  margin-right: 10.12px;
+}
+
+.others_read {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  top: 108.53px;
+  left: 60.25px;
+}
+
+.others_read02 {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  top: 108.53px;
+  left: 61px;
+}
+
+.others_read03 {
+  position: absolute;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  top: 108.53px;
+  left: 122.74px;
+}
+
+/* おきなわ工芸の杜について */
+
+.about {
+  margin-top: 16.62px;
+  position: relative;
+}
+
+.about_img {
+}
+
+.about_box {
+}
+
+/* テキスト */
+.about_txt_box {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: 514.86px;
+  left: 15%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.about_txt_title {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.about_txt {
+  font-size: 15px;
+  line-height: 240%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-top: 24.98px;
+}
+
+.about_txt_box a {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 70px;
+  width: 205.71px;
+  height: 54.99px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 39.16px;
+}
+
+.about_txt_box span {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 17.5px 12.16px 16.5px 44.54px;
+}
+
+/* マップ */
+.about_access_box {
+  position: absolute;
+}
 
 /* フッター
 --------------------------------- */
