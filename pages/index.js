@@ -10,6 +10,8 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { color } from "@mui/system";
+import { Box } from "@mui/material";
+import Nav from '../components/Nav';
 
 export default function Home() {
   return (
@@ -46,6 +48,9 @@ export default function Home() {
             <ArrowDropDownIcon />
           </div>
         </div>
+        <Box component="nav">
+          <Nav/>
+        </Box>
         <nav className={`${style.hd_nav}`}>
           <ul className={`${style.hd_list}`}>
             <li className={`${style.hd_list_item}`}>体験プログラム</li>
