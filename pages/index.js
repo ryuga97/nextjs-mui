@@ -7,9 +7,10 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { color } from "@mui/system";
+import AboutMap from "../components/about/map";
+import List1 from "../components/StepList";
+
 
 export default function Home() {
   return (
@@ -412,8 +413,8 @@ export default function Home() {
               />
             </div>
             <a className={`${style.others_button}`}>
-              <span>おきなわ工芸観光情報</span>
-              <OpenInNewIcon
+            <span>おきなわ工芸観光情報</span>
+            <OpenInNewIcon
                 style={{
                   verticalAlign: "top",
                   fontSize: "medium",
@@ -447,14 +448,13 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className={`${style.about_access_box}`}>
-              <div>（マップ）</div>
-              <button>交通アクセス</button>
-              <button>大きい地図で見る</button>
-            </div>
+            <AboutMap/>
           </div>
         </section>
+        <List1/>
       </main>
+      
+      
 
       {/* フッター
       ------------------------------------------------- */}
