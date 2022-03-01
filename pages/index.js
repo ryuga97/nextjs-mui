@@ -12,6 +12,7 @@ import AboutMap from "../components/about/map";
 import List1 from "../components/StepList";
 import ColList1 from "../components/ColList";
 import { Box } from "@mui/system";
+import ImageList from "../components/ ImageList";
 
 export default function Home() {
   return (
@@ -100,6 +101,10 @@ export default function Home() {
       <main className={`${style.main}`}>
         <Box sx={{position:"relative", }}>
           <ColList1 />
+        </Box>
+
+        <Box>
+          <ImageList/>
         </Box>
 
         {/* メインビジュアル */}
