@@ -10,7 +10,8 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import AboutMap from "../components/about/map";
 import List1 from "../components/StepList";
-
+import ColList1 from "../components/ColList";
+import { Box } from "@mui/system";
 
 export default function Home() {
   return (
@@ -97,11 +98,15 @@ export default function Home() {
       ------------------------------------------------- */}
 
       <main className={`${style.main}`}>
+        <Box sx={{position:"relative", }}>
+          <ColList1 />
+        </Box>
+
         {/* メインビジュアル */}
         <section className={`${style.mainVisual}`}>
           <div className={`${style.mainVisual_title_wrapp}`}>
             <span className={`${style.mainVisual_title_subTxt01}`}>開催中</span>
-
+""
             <span className={`${style.mainVisual_title_subTxt02}`}>
               企画展・イベント
             </span>
@@ -413,8 +418,8 @@ export default function Home() {
               />
             </div>
             <a className={`${style.others_button}`}>
-            <span>おきなわ工芸観光情報</span>
-            <OpenInNewIcon
+              <span>おきなわ工芸観光情報</span>
+              <OpenInNewIcon
                 style={{
                   verticalAlign: "top",
                   fontSize: "medium",
@@ -448,13 +453,10 @@ export default function Home() {
                 />
               </a>
             </div>
-            <AboutMap/>
+            <AboutMap />
           </div>
         </section>
-        <List1/>
       </main>
-      
-      
 
       {/* フッター
       ------------------------------------------------- */}
